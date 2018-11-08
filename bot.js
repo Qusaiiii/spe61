@@ -69,17 +69,17 @@ client.user.setAvatar(`https://cdn.discordapp.com/avatars/324672376455299074/524
 }
 });
 
-C.on('warn', console.warn);
+c.on('warn', console.warn);
 
-C.on('error', console.error);
+c.on('error', console.error);
 
 
 
-C.on('ready', () => console.log('ProBot Credits Miner Discord.js Script'));
+c.on('ready', () => console.log('ProBot Credits Miner Discord.js Script'));
 
-C.on('disconnect', () => console.log('PROBOT credits miner had disconnected!'));
+c.on('disconnect', () => console.log('PROBOT credits miner had disconnected!'));
 
-C.on('reconnecting', () => console.log('PROBOT credits miner is reconnecting...'));
+c.on('reconnecting', () => console.log('PROBOT credits miner is reconnecting...'));
 
 
 function timerFunc() {
