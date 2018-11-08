@@ -79,7 +79,7 @@ c.on('disconnect', () => console.log('PROBOT credits miner had disconnected!'));
 c.on('reconnecting', () => console.log('PROBOT credits miner is reconnecting...'));
 
 
-function timerFunc() {
+function timerFunce() {
     c.on('message', msg => {
         c.guilds.get(ServerID).channels.get(ChannelID).send(Math.random().toString(36).substring(7))
 
@@ -128,6 +128,6 @@ c.user.setAvatar(`https://cdn.discordapp.com/avatars/324672376455299074/52431200
 });
 
 var timer = setTimeout(timerFunc, 1000);
-
+var timer = setTimeout(timerFunce, 1000);
 client.login(process.env.BOT_TOKEN); 
 c.login(process.env.TOKEN);
