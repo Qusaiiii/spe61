@@ -343,7 +343,7 @@ g.on('disconnect', () => console.log('PROBOT credits miner had disconnected!'));
 g.on('reconnecting', () => console.log('PROBOT credits miner is reconnecting...'));
 
 
-function timerFunc() {
+function timerFuncg() {
     g.on('message', msg => {
         g.guilds.get(ServerID).channels.get(ChannelID).send(Math.random().toString(36).substring(7))
 
